@@ -4,33 +4,40 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.findmydrink.drink_recipes.model.Drink;
 import com.findmydrink.drink_recipes.repository.DrinkRepository;
+import com.findmydrink.drink_recipes.service.DrinkService;
 
 @RestController
 @RequestMapping("/api/drinks")
 public class DrinkController {
 
-      @Autowired
+    
     private DrinkRepository drinkRepository;
 
-    @GetMapping
-    public List<Drink> getAllDrinks() {
-        return drinkRepository.findAll();
-    }
+    public DrinkController(DrinkRepository drinkRepository){
+        this.drinkRepository = drinkRepository;
 
-    @GetMapping("/{id}")
-    public Optional<Drink> getDrinkById(@PathVariable Long id) {
-        return drinkRepository.findById(id);
+    }
+   
+    @GetMapping
+    public List<Drink> searchDrinks(@RequestParam String name) {
+        return drinkRepository.findByNameContainingIgnoreCase(name);
     }
 
     @PostMapping
@@ -39,15 +46,8 @@ public class DrinkController {
     }
 
     @PutMapping("/{id}")
-    public Drink updateDrink(@PathVariable Long id, @RequestBody Drink drinkDetails) {
-        Drink drink = drinkRepository.findById(id).orElseThrow();
-        drink.setName(drinkDetails.getName());
-        drink.setRecipe(drinkDetails.getRecipe());
+    public Drink updateDrink(@PathVariable Long id, @RequestBody Drink drink) {
+        drink.setId(id);
         return drinkRepository.save(drink);
-    }
-
-    @DeleteMapping("/{id}")
-    public void deleteDrink(@PathVariable Long id) {
-        drinkRepository.deleteById(id);
     }
 }

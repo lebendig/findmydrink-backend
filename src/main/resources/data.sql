@@ -1,0 +1,23 @@
+-- Active: 1721467061952@@127.0.0.1@5432@findmydrink
+INSERT INTO drink (name, recipe) VALUES 
+('Pink Paloma', 'Tequila 6cl, 1 Limette, Um pouco de sal, Agave Dicksaft (1 Schuss oder 4 cl), Pink Grapefruit Lemondae, Copo com Tajin (enche com gelo normal, na ponto um pouco de crushed ice) Limette no palito com pouquinho Tajin'),
+('Jalisco Fizz', 'Tequila 6cl, 1 Limette, Um pouco de sal, Agave Dicksaft (1 Schuss oder 4 cl), Halbe Orange, Pink Grapefruit Lemondae, Copo com Tajin (enche com gelo normal, na ponto um pouco de crushed ice) Orange no palito com pouquinho Tajín'),
+('Caipirinha', 'Cahaça 6 cl, 1 Limette (1.5 se nao tiver muito suco), 1 colher e meia de açúcar, Decoração= rodela de limão'),
+('Margarita', 'Tequila 6 cl, Cointreau 1 cl, 1 Limette (1.5 se nao tiver muito suco), Um pouquinho de sal, Agave Dicksaft (1 Schuss oder 4 cl), Colocar Tajín no copo, 3 gelos, pouquinho de crushed ice'),
+('Mint Margarita', 'Tequila 6 cl, Cointreau 1 cl, 1 Limette (1.5 se nao tiver muito suco), Um pouquinho de sal, Agave Dicksaft (1 Schuss oder 4 cl), Minze'),
+('Piña Margarita', 'Tequila 6 cl, Cointreau 1 cl, 1 Limette (1.5 se nao tiver muito suco), Um pouquinho de sal, Suco de Ananas (2 Schuss oder 6 cl), Colocar Tajin no copo, 3 gelos'),
+('Whisky Sour', 'Whisky (Bourbon) 6 cl, Aquafaba 6 cl (2 Schuss), 1 Zitrone (1.5 se nao tiver muito suco), Gommesirup (2 Schuss oder 6 cl), Decoração: Um pedacinho de Zitronenschale contado com a sisora'),
+('Caramel Whisky Sour', 'Whisky (Bourbon) 6 cl, Aquafaba 6 cl (2 Schuss), 1 Zitrone (1.5 se nao tiver muito suco), Caramelsirup (2 Schuss oder 6 cl), Decoração: Caramelisierte Zitronescheibe'),
+('Pisco Sour', 'Pisco 6 cl, Aquafaba 6 cl (2 Schuss), 1 Limette (1.5 se nao tiver muito suco), Gommesirup (2 Schuss oder 6 cl)'),
+('Frankfurt Sour', 'Amaretto 6 cl, Aquafaba 6 cl (2 Schuss), Apfelsaft 6 cl (1 Schuss), 1 Zitrone (1.5 se nao tiver muito suco), Muito pouquinho Gommesirup (metade de um Schuss 1 cl)'),
+('Mezcal Sour', 'Mezcal 6 cl, Aquafaba 6 cl (2 Schuss), 1 Limette (1.5 se não tiver muito suco), Agave Dicksaft (2 Schuss oder 6 cl)'),
+('Caramel Mezcal Sour', 'Mezcal 6 cl, Aquafaba 6 cl (2 Schuss), 1 Limette (1.5 se não tiver muito suco), Caramelsirup (2 Schuss oder 6 cl)'),
+('Siberian Sour', 'Vodka 6 cl, Aquafaba 6 cl (2 Schuss), 1 Limette (1.5 se não tiver muito suco), Gommesirup (2 Schus oder 6 cl), Peach Bitters (Umas 6 gotinhas)'),
+('43 Sour', '43 Likör 6 cl, Aquafaba 6 cl (2 Schuss), 1 Zitrone (1.5 se nao tiver muito suco), Muito pouquinho Gommesirup (metade de um Schuss 1 cl)'),
+('Negroni', 'Campari 3cl, Gin 3cl, Red Vermouth 3cl, Orangenschale 3 - 4 Stück, Gerührt (großer Eisblock)'),
+('Purple Negroni', 'Purple Gin 4cl, Italicus 3cl, Dry Vermouth 3cl, Limettenschale 2 - 3 Stück, Gerührt (großer Eisblock), Deco: Limmetenschale'),
+('Don Martinez', 'Tequila 5cl, Mezcal 1cl, Ancho verde 1cl, Vermouth White 3cl, Gerührt (großer Eisblock), Deco: Limmetenschale'),
+('The Artist', 'Purple Gin 6cl, Gurkenschale 2-3 Stück, Orangenschale 2-3 Stück, 0.5 Zitrone (1 se nao tiver muito suco), Gommesirup (2 Schus oder 4 cl), Glas vorkühlen mit Crushed ice, Coloca espuma no copo 1/3 do copo, decora a vontade com chispinhas'),
+('Ginger Highball', 'Red Label/Jack Daniels 6cl, 1 Halbe Limette, Gommesirup (2 Schus oder 4 cl), Ingwer fein geschnitten, Ginger Ale (Thomas Henry), Mistura no copo, no precisa shakear'),
+('Mezcal Highball', 'Mezcal 4cl, Olympia 1cl, White Vermouth 2cl, 1/2 Orange, Spicy Ginger (Thomas Henry), Mistura no copo, no precisa shakear'),
+('Elis & Tom', 'Cachaca 6cl, Maraschino 1 cl, Gommesirup (2 Schus oder 4cl), Aquafaba 6cl (2 Schuss), Coloca um cereija no fundo do copo e um pouco do sirup das cerejas, coloca crushed ice no copo (metade), coloca drink, depois coloca mais crushed ice e uma cereja com o sirup das cerejas para decorar');
